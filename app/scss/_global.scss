@@ -1,0 +1,19 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #12100c;
+
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.hidden{
+  overflow: hidden;
+}
