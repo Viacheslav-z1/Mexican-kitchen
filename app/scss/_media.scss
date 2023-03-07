@@ -14,6 +14,13 @@
       justify-content: center;
     }
   }
+
+  .about{
+
+    &__food-box{
+      max-width: 350px;
+    }
+  }
 }
 
 
@@ -47,6 +54,21 @@
     }
     &__block{
       max-width: 100%;
+      text-align: center;
+    }
+  }
+
+   .about{
+
+    &__food-item{
+     flex-direction: column;
+    }
+
+    &__food-descr{
+      max-width: 100%;
+      text-align: center;
+    }
+    &__food__item-title{
       text-align: center;
     }
   }
@@ -145,6 +167,13 @@
       text-align: center;
     }
   }
+
+  .about{
+
+    &__food-list{
+      gap: 20px;
+    }
+  }
 }
 
 
@@ -154,6 +183,11 @@
   .about {
     &__img-knite{
       height: 290px;
+    }
+
+    &__title{
+      font-size: 35px;
+      line-height: 40px;
     }
   }
 }
