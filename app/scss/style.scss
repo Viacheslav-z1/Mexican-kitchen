@@ -13,6 +13,11 @@
     gap: 10px;
   }
 
+  &__img{
+    max-width: 90px;
+    object-fit: contain;
+  }
+
   &__logo-link {
     color: #fff;
     font-family: "Cormorant Upright";
@@ -208,6 +213,7 @@
 
 .cook {
   padding: 50px 0;
+  background-image: url('../images/cook_bg.jpg');
   &__title {
     color: #dcca87;
     margin-bottom: 50px;
