@@ -315,6 +315,49 @@
   &__food-img {
     width: 100%;
   }
+  &__food-link {
+    color: #0c0b08;
+    padding: 8px 32px;
+    background-color: #dcca87;
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.5s;
+    margin-top: 30px;
+    display: inline-block;
+    &:hover {
+      background-color: rgb(146, 97, 53);
+    }
+  }
+}
+
+.rec {
+  &__title {
+    color: #dcca87;
+    font-family: "Cormorant Upright";
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__text {
+    color: #dcca87;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    margin-bottom: 30px !important;
+  }
+
+  &__item {
+    padding-left: 5px;
+    margin-bottom: 5px;
+    &:before{
+      content: '-  '
+    }
+  }
 }
 
 @import "media";
