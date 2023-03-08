@@ -409,4 +409,58 @@
   }
 }
 
+.footer {
+  padding: 40px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__contacts {
+  }
+
+  &__item {
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+    &:hover {
+      border-bottom: 2px solid #c58b59;
+    }
+  }
+}
+
+.scroll__up {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  transform: translateY(300%);
+  transition: all .5s;
+  &.show{
+    transform: translateY(0);
+  }
+}
+.scroll__up-box {
+  background-color: #a1a1a1b4;
+  padding: 5px;
+}
+
 @import "media";

@@ -112,6 +112,12 @@
 }
 
 @media (max-width: 600px) {
+
+  .header{
+    &__img{
+      max-width: 70px;
+    }
+  }
   .menu {
     &__list {
       position: absolute;
@@ -172,6 +178,15 @@
 
     &__food-list{
       gap: 20px;
+    }
+  }
+
+  .footer{
+
+    &__inner{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
     }
   }
 }

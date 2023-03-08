@@ -33,6 +33,34 @@ $(function () {
     }
   });
 
+  const scrollUpBtn = document.querySelector(".scroll__up");
+
+  let clientHeight = document.body.scrollHeight;
+
+  window.addEventListener("scroll", function () {
+    console.log();
+
+    if (window.pageYOffset / clientHeight > 0.3) {
+      scrollUpBtn.classList.add("show");
+    } else {
+      scrollUpBtn.classList.remove("show");
+    }
+  });
 
 
+
+  const anchors = document.querySelectorAll('a[href*="#"]');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const blockID = anchor.getAttribute("href").substr(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }
 });
