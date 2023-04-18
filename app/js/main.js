@@ -38,7 +38,6 @@ $(function () {
   let clientHeight = document.body.scrollHeight;
 
   window.addEventListener("scroll", function () {
-    console.log();
 
     if (window.pageYOffset / clientHeight > 0.3) {
       scrollUpBtn.classList.add("show");
